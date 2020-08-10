@@ -1,0 +1,15 @@
+<h1> Destination Show Page </h1>
+
+<%= @destination.name%>
+<%= @destination.country %><br>
+
+Iterate through Posts and match posts.destination_id to @destination.id and print 5 uniques
+
+<% arr = Array.new(5)%>
+
+<% while arr.length < 5 do %>
+<% arr << @posts.last %>
+<% arr.uniq %>
+<%end%>
+<%=arr%>
+<%byebug%>

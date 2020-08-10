@@ -1,0 +1,12 @@
+<h1> Blogger Show Page </h1>
+
+<%= @blogger.name %><br>
+<%= @blogger.bio %><br>
+<%= @blogger.age %><br>
+
+Like function: 
+<br>
+<%= @blogger.posts.sum(:likes) %>
+
+Link to Blogger's featured post:
+<br>
